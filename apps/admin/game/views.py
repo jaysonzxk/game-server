@@ -24,10 +24,10 @@ class GameCategoryModelViewSet(CustomModelViewSet):
     def add_category(self, request: Request, *args, **kwargs):
         jsonData = request.data
         if jsonData:
-            vipObj = self.queryset.filter(name=jsonData.get('name')).first()
-            if vipObj:
+            categoryObj = self.queryset.filter(name=jsonData.get('name')).first()
+            if categoryObj:
                 return ErrorResponse(msg='该游戏分类已存在')
-            serializer = GameManufacturerSerializer(data=jsonData)
+            serializer = GameCategorySerializer(data=jsonData)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
                 return SuccessResponse(msg='新增成功')
@@ -41,7 +41,7 @@ class GameCategoryModelViewSet(CustomModelViewSet):
                 instance = self.queryset.filter(id=jsonData.get('id')).first()
                 if instance:
                     instance.name = jsonData.get('name')
-                    instance.image = jsonData.get('image')
+                    instance.uri = jsonData.get('uri')
                     instance.sort = jsonData.get('sort')
                     instance.status = jsonData.get('status')
                     instance.save()
@@ -81,8 +81,8 @@ class GameManufacturerViewSet(CustomModelViewSet):
     def add_manufacturer(self, request: Request, *args, **kwargs):
         jsonData = request.data
         if jsonData:
-            vipObj = self.queryset.filter(name=jsonData.get('name')).first()
-            if vipObj:
+            manufacturerObj = self.queryset.filter(name=jsonData.get('name')).first()
+            if manufacturerObj:
                 return ErrorResponse(msg='该厂商已存在')
             serializer = GameManufacturerSerializer(data=jsonData)
             if serializer.is_valid(raise_exception=True):
@@ -99,7 +99,7 @@ class GameManufacturerViewSet(CustomModelViewSet):
                 if instance:
                     instance.name = jsonData.get('name')
                     instance.gameCategory_id = jsonData.get('gameCategoryId')
-                    instance.image = jsonData.get('image')
+                    instance.uri = jsonData.get('uri')
                     instance.sort = jsonData.get('sort')
                     instance.status = jsonData.get('status')
                     instance.save()
@@ -139,9 +139,9 @@ class GamesModelViewSet(CustomModelViewSet):
     def add_games(self, request: Request, *args, **kwargs):
         jsonData = request.data
         if jsonData:
-            userVipObj = self.queryset.filter(user_id=jsonData.get('userId')).filter(
-                vipCard_id=jsonData.get('vipCardId')).first()
-            if userVipObj:
+            gamesObj = self.queryset.filter(gameManufacturer_id=jsonData.get('manufacturerId')).filter(
+                name=jsonData.get('name')).first()
+            if gamesObj:
                 return ErrorResponse(msg='该游戏已存在')
             serializer = GamesSerializer(data=jsonData)
             if serializer.is_valid(raise_exception=True):
@@ -162,7 +162,7 @@ class GamesModelViewSet(CustomModelViewSet):
                     instance.gameManufacturer_id = jsonData.get('gameManufacturerId')
                     instance.status = jsonData.get('status')
                     instance.name = jsonData.get('name')
-                    instance.image = jsonData.get('image')
+                    instance.uri = jsonData.get('uri')
                     instance.url = jsonData.get('url')
                     instance.sort = jsonData.get('sort')
                     instance.isRecommend = jsonData.get('isRecommend')

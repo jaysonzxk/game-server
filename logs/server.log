@@ -49,3 +49,245 @@
 [2023-12-28 16:48:42,383][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
 [2023-12-28 16:49:36,779][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
 [2023-12-28 16:49:37,676][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:59:49,394][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 17:00:43,497][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 17:05:46,137][django.request.log_response():222] [WARNING] Not Found: /admin/games/gameCategory
+[2023-12-28 17:05:58,092][django.request.log_response():222] [WARNING] Not Found: /admin/games/gameCategory
+[2023-12-28 17:06:16,967][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/urls.py changed, reloading.
+[2023-12-28 17:06:18,351][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 17:12:47,380][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/models/games.py changed, reloading.
+[2023-12-28 17:12:48,829][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 17:31:39,802][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 17:32:20,575][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 18:10:58,156][django.request.log_response():222] [ERROR] Internal Server Error: /admin/upload
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/middleware/common.py", line 86, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/admin/upload/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2023-12-28 18:11:27,911][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/urls.py changed, reloading.
+[2023-12-28 18:11:29,332][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 18:13:39,198][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:16:35,953][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:17:55,039][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:19:34,660][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:21:46,694][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:28:57,998][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameCategory/add, 权限认证:10
+[2023-12-28 18:28:58,034][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1054, "Unknown column 'game_gamecategory.uri' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 27, in add_category
+    vipObj = self.queryset.filter(name=jsonData.get('name')).first()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 653, in first
+    for obj in (self if self.ordered else self.order_by('pk'))[:1]:
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 274, in __iter__
+    self._fetch_all()
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1142, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'game_gamecategory.uri' in 'field list'")
+
+[2023-12-28 18:29:25,793][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 18:29:27,425][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 18:29:33,443][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameCategory/add, 权限认证:10
+[2023-12-28 18:29:33,459][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1054, "Unknown column 'game_gamecategory.uri' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 28, in add_category
+    vipObj = self.queryset.filter(name=jsonData.get('name')).first()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 653, in first
+    for obj in (self if self.ordered else self.order_by('pk'))[:1]:
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 274, in __iter__
+    self._fetch_all()
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1142, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'game_gamecategory.uri' in 'field list'")
+
+[2023-12-28 18:32:16,358][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 18:32:17,693][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 18:32:23,425][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameCategory/add, 权限认证:10
+[2023-12-28 18:32:23,442][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1054, "Unknown column 'game_gamecategory.uri' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 27, in add_category
+    categoryObj = self.queryset.filter(name=jsonData.get('name')).first()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 653, in first
+    for obj in (self if self.ordered else self.order_by('pk'))[:1]:
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 274, in __iter__
+    self._fetch_all()
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1142, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'game_gamecategory.uri' in 'field list'")
+
