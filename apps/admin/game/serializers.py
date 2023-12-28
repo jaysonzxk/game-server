@@ -24,3 +24,14 @@ class GameManufacturerSerializer(CustomModelSerializer):
     class Meta:
         model = GameManufacturer
         fields = '__all__'
+
+
+class GamesSerializer(CustomModelSerializer):
+    """
+    游戏序列化器
+    """
+    GameManufacturer = serializers.CharField()
+
+    class Meta:
+        model = Games
+        fields = '__all__'

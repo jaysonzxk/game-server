@@ -29,3 +29,23 @@
 [2023-12-28 16:12:30,594][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
 [2023-12-28 16:12:55,915][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/models/games.py changed, reloading.
 [2023-12-28 16:12:56,808][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:19:03,471][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/urls.py changed, reloading.
+[2023-12-28 16:19:04,570][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:23:37,429][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/models/games.py changed, reloading.
+[2023-12-28 16:23:38,680][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:31:16,020][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/urls.py changed, reloading.
+[2023-12-28 16:31:17,348][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:32:14,145][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 16:32:15,368][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:36:59,807][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 16:37:01,282][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:37:33,456][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 16:37:34,693][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:42:40,517][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 16:42:41,969][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:47:15,978][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/urls.py changed, reloading.
+[2023-12-28 16:47:17,186][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:48:41,438][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/urls.py changed, reloading.
+[2023-12-28 16:48:42,383][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:49:36,779][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 16:49:37,676][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
