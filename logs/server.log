@@ -1,0 +1,27 @@
+[2023-12-28 12:42:05,773][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 12:50:04,316][apps.app.utils.backends.authenticate():19] [INFO] admin 正在使用本地登录...
+[2023-12-28 12:53:30,890][admin.op_drf.middleware.process_view():157] [INFO] [admin] DELETE:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 12:54:28,474][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 12:54:36,840][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 12:54:46,099][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 12:55:10,824][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 12:55:49,636][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 15:03:15,738][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 15:10:20,928][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 15:10:39,977][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 15:11:52,340][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 15:12:42,564][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 15:13:26,076][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/member/urls.py changed, reloading.
+[2023-12-28 15:13:27,343][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 15:13:47,540][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 15:14:34,575][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 15:15:09,888][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 15:15:25,720][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 15:15:37,418][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 15:15:44,821][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 15:15:51,516][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 15:15:58,099][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 15:17:29,168][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 15:18:13,237][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 15:18:43,123][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 15:19:16,630][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20

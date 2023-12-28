@@ -22,9 +22,9 @@ urlpatterns = [
     re_path('user/profile/', UserProfileModelViewSet.as_view({'get': 'profile', 'put': 'put_profile'})),
 
     # 会员卡
-    re_path('vipCard/add/', VipCardModelViewSet.as_view({'post': 'add_vip_card'})),
-    re_path('vipCard/update/', VipCardModelViewSet.as_view({'post': 'update_vip_card'})),
-    re_path('vipCard/del/', VipCardModelViewSet.as_view({'post': 'del_vip_card'})),
+    re_path('vipCard/add', VipCardModelViewSet.as_view({'post': 'add_vip_card'})),
+    re_path('vipCard/update', VipCardModelViewSet.as_view({'post': 'update_vip_card'})),
+    re_path('vipCard/del', VipCardModelViewSet.as_view({'post': 'del_vip_card'})),
 
     # 用户会员卡
     re_path('userVip/add/', UserVipCardModelViewSet.as_view({'post': 'add_user_vip'})),
