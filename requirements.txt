@@ -28,3 +28,6 @@ user-agents==2.2.0
 eventlet==0.30.2
 psutil==5.8.0
 drf-yasg==1.20.0
+djangorestframework-simplejwt=5.3.1
+django_restql=0.15.3
+qrcode=7.4.2
