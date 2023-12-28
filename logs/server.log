@@ -25,3 +25,7 @@
 [2023-12-28 15:18:13,237][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
 [2023-12-28 15:18:43,123][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
 [2023-12-28 15:19:16,630][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 16:12:29,681][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2023-12-28 16:12:30,594][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 16:12:55,915][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/models/games.py changed, reloading.
+[2023-12-28 16:12:56,808][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader

@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'apps.admin.member',
     'apps.admin.order',
     'apps.admin.pay',
+    'apps.admin.game',
 ]
 
 MIDDLEWARE = [
