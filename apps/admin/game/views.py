@@ -160,10 +160,10 @@ class GamesModelViewSet(CustomModelViewSet):
             serializer = GamesSerializer(data=jsonData)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
-            instance = serializer.data.get('id')
-            instance.gameManufacturer_id = jsonData.get('gameManufacturerId')
-            instance.save()
-            return SuccessResponse(msg='新增成功')
+            # instance = serializer.data.get('id')
+            # instance.gameManufacturer_id = jsonData.get('gameManufacturerId')
+            # instance.save()
+                return SuccessResponse(msg='新增成功')
         return ErrorResponse(msg='参数错误')
 
     @transaction.atomic
@@ -188,3 +188,10 @@ class GamesModelViewSet(CustomModelViewSet):
             except Exception as e:
                 return ErrorResponse(msg='未知错误')
         return ErrorResponse(msg='参数错误')
+
+    def get_all_manufacturer(self, request: Request, *args, **kwargs):
+        try:
+            results = GameManufacturer.objects.values('id', 'name')
+            return SuccessResponse(data=results)
+        except Exception as e:
+            return ErrorResponse(msg='未知异常')

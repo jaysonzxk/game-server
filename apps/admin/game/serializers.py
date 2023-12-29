@@ -30,7 +30,7 @@ class GamesSerializer(CustomModelSerializer):
     """
     游戏序列化器
     """
-    gameManufacturer = serializers.CharField()
+    gameManufacturer = serializers.IntegerField(source='gameManufacturer_id')
 
     class Meta:
         model = Games

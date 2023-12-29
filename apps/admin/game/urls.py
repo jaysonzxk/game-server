@@ -22,5 +22,6 @@ urlpatterns = [
     # 游戏
     re_path('games/add', GamesModelViewSet.as_view({'post': 'add_games'})),
     re_path('games/update', GamesModelViewSet.as_view({'post': 'update_games'})),
+    re_path('manufacturer/list', GamesModelViewSet.as_view({'get': 'get_all_manufacturer'})),
 ]
 urlpatterns += router.urls
