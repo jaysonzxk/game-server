@@ -150,7 +150,7 @@ if not os.path.exists(os.path.join(BASE_DIR, 'media')):
 MEDIA_URL = "/media/"
 # 项目中存储上传文件的根目录
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-ALLOWED_IMG_TYPE = ['png', 'jpg', 'gif', 'image/png']
+ALLOWED_IMG_TYPE = ['png', 'jpg', 'gif', 'image/png', 'jpeg']
 
 """
 日志配置

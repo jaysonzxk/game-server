@@ -17,6 +17,7 @@ urlpatterns = [
     re_path('gameManufacturer/add', GameManufacturerViewSet.as_view({'post': 'add_manufacturer'})),
     re_path('gameManufacturer/update', GameManufacturerViewSet.as_view({'post': 'update_manufacturer'})),
     re_path('gameManufacturer/delete', GameManufacturerViewSet.as_view({'post': 'del_manufacturer'})),
+    re_path('category/list', GameManufacturerViewSet.as_view({'get': 'get_all_category'})),
 
     # 游戏
     re_path('games/add', GamesModelViewSet.as_view({'post': 'add_games'})),

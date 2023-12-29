@@ -19,7 +19,7 @@ class GameManufacturerSerializer(CustomModelSerializer):
     """
     游戏厂商序列化器
     """
-    GameCategory = serializers.CharField()
+    gameCategory = serializers.IntegerField(source='gameCategory_id')
 
     class Meta:
         model = GameManufacturer
@@ -30,7 +30,7 @@ class GamesSerializer(CustomModelSerializer):
     """
     游戏序列化器
     """
-    GameManufacturer = serializers.CharField()
+    gameManufacturer = serializers.CharField()
 
     class Meta:
         model = Games

@@ -27,10 +27,13 @@ class GameCategoryModelViewSet(CustomModelViewSet):
             categoryObj = self.queryset.filter(name=jsonData.get('name')).first()
             if categoryObj:
                 return ErrorResponse(msg='该游戏分类已存在')
-            serializer = GameCategorySerializer(data=jsonData)
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return SuccessResponse(msg='新增成功')
+            try:
+                serializer = GameCategorySerializer(data=jsonData)
+                if serializer.is_valid(raise_exception=True):
+                    serializer.save()
+                    return SuccessResponse(msg='新增成功')
+            except Exception as e:
+                return ErrorResponse(msg='未知错误')
         return ErrorResponse(msg='参数错误')
 
     @transaction.atomic
@@ -72,7 +75,7 @@ class GameManufacturerViewSet(CustomModelViewSet):
     """
     游戏厂商 的CRUD视图
     """
-    queryset = GameManufacturer.objects.all()
+    queryset = GameManufacturer.objects.filter(isDel=0).all()
     serializer_class = GameManufacturerSerializer
     filter_class = GameManufacturerFilter
     ordering = 'sort'  # 默认排序
@@ -87,6 +90,10 @@ class GameManufacturerViewSet(CustomModelViewSet):
             serializer = GameManufacturerSerializer(data=jsonData)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
+            # instance = serializer.data.get('id')
+            # print(instance)
+            # instance.gameCategory_id = jsonData.get('gameCategory')
+            # instance.save()
                 return SuccessResponse(msg='新增成功')
         return ErrorResponse(msg='参数错误')
 
@@ -124,6 +131,13 @@ class GameManufacturerViewSet(CustomModelViewSet):
             except Exception as e:
                 return ErrorResponse(msg='未知错误')
         return ErrorResponse(msg='参数错误')
+
+    def get_all_category(self, request: Request, *args, **kwargs):
+        try:
+            results = GameCategory.objects.values('id', 'name')
+            return SuccessResponse(data=results)
+        except Exception as e:
+            return ErrorResponse(msg='未知异常')
 
 
 class GamesModelViewSet(CustomModelViewSet):

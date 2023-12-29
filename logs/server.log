@@ -291,3 +291,807 @@ Traceback (most recent call last):
     _mysql.connection.query(self, query)
 django.db.utils.OperationalError: (1054, "Unknown column 'game_gamecategory.uri' in 'field list'")
 
+[2023-12-28 18:36:09,772][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 18:36:11,175][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 18:36:17,058][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameCategory/add, 权限认证:10
+[2023-12-28 18:39:25,434][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:39:29,573][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameCategory/add, 权限认证:10
+[2023-12-28 18:42:25,107][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:42:29,055][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameCategory/add, 权限认证:10
+[2023-12-28 18:44:55,832][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:45:20,288][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:45:27,624][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:45:41,896][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameCategory/add, 权限认证:10
+[2023-12-28 18:48:53,664][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:49:48,980][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2023-12-28 18:49:50,380][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 18:50:21,237][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:50:37,262][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameCategory/add, 权限认证:10
+[2023-12-28 18:53:11,960][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 18:53:17,913][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameCategory/add, 权限认证:10
+[2023-12-28 20:13:40,615][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:14:42,236][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:15:08,154][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:15:34,088][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:15:59,401][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:16:03,095][admin.op_drf.middleware.process_view():157] [INFO] [admin] DELETE:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 20:16:44,309][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:17:13,659][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:17:35,860][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:18:06,511][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:18:25,612][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:18:59,824][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:20:01,654][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:20:23,894][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:20:54,224][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2023-12-28 20:21:36,022][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2023-12-28 20:34:20,106][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:34:21,520][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:34:59,792][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/urls.py changed, reloading.
+[2023-12-28 20:35:00,953][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:40:54,977][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:40:56,226][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:41:14,420][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:41:15,355][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:41:27,998][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:41:29,007][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:42:18,074][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:42:19,246][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:42:25,562][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:42:26,874][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:42:47,224][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:42:48,597][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:43:01,366][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:43:02,606][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:43:06,947][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 132, in get_all_category
+    print(GameCategory.objects.values_list('id', 'name', flat=True))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 806, in values_list
+    raise TypeError("'flat' is not valid when values_list is called with more than one field.")
+TypeError: 'flat' is not valid when values_list is called with more than one field.
+
+[2023-12-28 20:44:05,088][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:44:06,383][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:44:15,504][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 132, in get_all_category
+    print(GameCategory.objects.values_list('id', 'name', flat=True))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 806, in values_list
+    raise TypeError("'flat' is not valid when values_list is called with more than one field.")
+TypeError: 'flat' is not valid when values_list is called with more than one field.
+
+[2023-12-28 20:44:21,429][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:44:22,594][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:44:42,119][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:44:42,966][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:46:06,146][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:46:06,980][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:46:30,328][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:46:31,147][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:47:00,649][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:47:01,504][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:47:17,460][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 20:47:18,278][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:57:32,784][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 20:58:28,222][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 20:58:29,619][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 20:58:40,876][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:01:48,069][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 21:01:49,220][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:01:54,950][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:01:54,967][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 92, in add_manufacturer
+    serializer.save()
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 34, in save
+    return super().save(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 47, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/base.py", line 483, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 206, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'6'": "GameManufacturer.gameCategory" must be a "GameCategory" instance.
+
+[2023-12-28 21:03:05,452][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:03:05,459][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 92, in add_manufacturer
+    serializer.save()
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 34, in save
+    return super().save(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 47, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/base.py", line 483, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 206, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'6'": "GameManufacturer.gameCategory" must be a "GameCategory" instance.
+
+[2023-12-28 21:18:14,365][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 21:18:16,151][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:18:22,030][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:18:22,050][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 93, in add_manufacturer
+    serializer.save()
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 34, in save
+    return super().save(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 47, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/base.py", line 483, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 206, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'6'": "GameManufacturer.gameCategory" must be a "GameCategory" instance.
+
+[2023-12-28 21:19:02,683][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:19:16,480][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 21:19:17,473][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:19:26,403][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:19:51,403][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 21:19:52,381][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:19:55,373][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:20:17,757][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 21:20:18,673][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:20:50,137][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:21:50,494][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 21:21:51,286][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:22:23,345][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 21:22:25,279][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:24:00,357][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 21:24:01,680][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:25:34,228][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 21:25:35,434][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:26:19,750][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 21:26:20,651][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:27:26,098][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 21:27:27,332][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:28:18,072][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 21:28:21,463][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:28:21,495][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 92, in add_manufacturer
+    serializer.save()
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 34, in save
+    return super().save(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 47, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/base.py", line 483, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 206, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'3'": "GameManufacturer.gameCategory" must be a "GameCategory" instance.
+
+[2023-12-28 21:34:10,470][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 21:34:12,008][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:34:17,150][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:34:17,169][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 93, in add_manufacturer
+    serializer.save()
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 34, in save
+    return super().save(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 47, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/base.py", line 483, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 206, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'3'": "GameManufacturer.gameCategory" must be a "GameCategory" instance.
+
+[2023-12-28 21:35:08,265][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 21:35:10,025][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:41:29,296][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 21:41:31,001][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:41:38,705][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:47:03,991][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:49:07,006][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 21:49:13,972][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 21:51:45,754][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:04:40,995][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:04:51,266][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:12:21,587][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:14:14,098][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-28 22:14:23,827][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:15:02,150][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 22:15:03,540][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:15:11,113][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:15:25,397][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 22:15:26,670][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:15:32,382][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:15:40,761][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 22:15:42,029][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:15:47,405][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:17:11,706][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:17:39,827][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 22:17:41,213][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:17:45,130][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:19:52,252][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 22:19:53,533][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:20:00,048][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:20:10,319][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 22:20:11,833][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:20:18,133][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:20:27,278][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 22:20:28,303][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:20:31,869][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:20:31,885][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 91, in add_manufacturer
+    if serializer.is_valid(raise_exception=True):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 718, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+
+[2023-12-28 22:20:41,329][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 22:20:42,369][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:20:44,502][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-28 22:20:45,634][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:23:47,779][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:24:05,760][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 22:24:06,775][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:24:10,008][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:24:27,219][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 22:24:28,181][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:24:31,221][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:27:35,401][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 22:27:36,828][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:27:42,832][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:28:12,688][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 22:28:14,468][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:28:20,100][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 22:28:21,136][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:28:27,077][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-28 22:32:36,012][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 22:32:37,578][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:36:29,618][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-28 22:36:30,843][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-28 22:36:35,986][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 10:22:29,395][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 10:22:30,562][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:22:55,032][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:22:55,942][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:23:09,027][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 10:23:09,055][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 92, in add_manufacturer
+    serializer.save()
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 34, in save
+    return super().save(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 47, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/base.py", line 483, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 206, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'3'": "GameManufacturer.gameCategory" must be a "GameCategory" instance.
+
+[2023-12-29 10:24:06,865][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:24:08,309][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:24:54,219][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:24:55,389][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:25:08,056][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:25:09,234][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:25:16,991][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 10:25:17,008][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 94, in add_manufacturer
+    instance.gameCategory_id = jsonData.get('gameCategory')
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'gameCategory_id'
+
+[2023-12-29 10:25:38,322][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 10:25:39,599][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:25:44,731][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 10:25:44,754][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 95, in add_manufacturer
+    instance.gameCategory_id = jsonData.get('gameCategory')
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'gameCategory_id'
+
+[2023-12-29 10:26:04,647][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 10:26:05,971][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:26:16,658][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 10:26:50,220][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:26:51,397][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:38:02,168][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:38:03,405][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:38:19,632][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-29 10:38:24,707][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 10:39:23,061][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/models/games.py changed, reloading.
+[2023-12-29 10:39:23,872][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:45:26,265][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/models/games.py changed, reloading.
+[2023-12-29 10:45:27,099][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:46:52,562][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:46:53,407][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:47:06,445][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 963, in to_representation
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'GameCategory'
+
+[2023-12-29 10:47:32,005][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:47:32,919][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:47:47,946][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:47:48,728][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:48:10,950][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:48:11,875][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:49:36,230][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/models/games.py changed, reloading.
+[2023-12-29 10:49:37,075][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:52:49,802][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/models/games.py changed, reloading.
+[2023-12-29 10:52:51,221][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:55:24,665][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:55:25,638][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:55:32,672][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 963, in to_representation
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'GameCategory'
+
+[2023-12-29 10:55:38,497][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:55:39,447][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:57:12,404][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:57:13,293][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:57:19,227][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    for field in fields:
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 63, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 1034, in get_fields
+    extra_kwargs, hidden_fields = self.get_uniqueness_extra_kwargs(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 1389, in get_uniqueness_extra_kwargs
+    model_fields = self._get_model_fields(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 1478, in _get_model_fields
+    field = model._meta.get_field(source)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/options.py", line 551, in get_field
+    return self._forward_fields_map[field_name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: unhashable type: 'dict'
+
+[2023-12-29 10:57:30,451][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:57:31,475][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 10:57:35,598][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 10:57:36,662][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:00:15,466][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:00:16,925][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:11:05,468][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:11:06,763][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:11:15,643][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+TypeError: 'GameCategory' object is not iterable
+
+[2023-12-29 11:11:31,492][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:11:32,348][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:12:05,386][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2023-12-29 11:12:10,821][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 11:19:09,323][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:19:10,643][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:19:15,462][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 11:19:15,489][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 92, in add_manufacturer
+    serializer.save()
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 34, in save
+    return super().save(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 47, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/base.py", line 483, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 206, in __set__
+    raise ValueError(
+ValueError: Cannot assign "3": "GameManufacturer.gameCategory" must be a "GameCategory" instance.
+
+[2023-12-29 11:19:42,351][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:19:50,271][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 11:20:54,959][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/game/views.py", line 92, in add_manufacturer
+    serializer.save()
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 34, in save
+    return super().save(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 47, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/base.py", line 483, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/db/models/fields/related_descriptors.py", line 206, in __set__
+    raise ValueError(
+ValueError: Cannot assign "3": "GameManufacturer.gameCategory" must be a "GameCategory" instance.
+
+[2023-12-29 11:21:28,487][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:23:58,000][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:23:59,523][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:24:07,427][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 11:24:23,763][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:24:25,102][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:24:32,123][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/gameManufacturer/add, 权限认证:10
+[2023-12-29 11:25:06,239][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:25:07,505][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:25:33,241][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:25:34,243][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:25:51,286][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:25:52,124][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:42:09,612][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:42:11,055][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:42:17,407][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 963, in to_representation
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'AG电子'
+
+[2023-12-29 11:42:31,673][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:42:32,646][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:43:28,351][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:43:29,211][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:47:13,685][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:47:14,874][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:48:17,298][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 11:48:18,511][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:49:10,435][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 11:49:11,407][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:49:30,685][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 11:49:31,625][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:50:07,945][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 11:50:08,904][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:51:05,582][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 11:51:06,426][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:51:42,837][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 11:51:43,644][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:51:51,115][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 11:51:52,118][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:53:09,909][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/views.py changed, reloading.
+[2023-12-29 11:53:10,804][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 11:59:55,036][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 11:59:56,316][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:04:22,788][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 963, in to_representation
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'GameCategory'
+
+[2023-12-29 12:04:32,170][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 963, in to_representation
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'GameCategory'
+
+[2023-12-29 12:05:45,596][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 12:05:47,153][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
