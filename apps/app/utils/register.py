@@ -41,6 +41,7 @@ from apps.app.utils.request_util import get_request_ip, get_login_location, get_
 from apps.app.utils.serializers import CustomModelSerializer
 from apps.app.utils.encryption import encode_password
 
+
 logger = logging.getLogger(__name__)
 
 User = get_user_model()
@@ -122,10 +123,13 @@ class RegisterView(ObtainJSONWebToken):
                 password = encode_password(jsonData.get('password'))
                 inviteCode = ''.join(random.sample(string.ascii_letters + string.digits, 6))
                 data = {'inviteCode': inviteCode.upper(), 'user_type': 1, 'username': jsonData.get('username'),
-                        "password": password, 'mobile': jsonData.get('mobile'), 'name': jsonData.get('username')}
+                        'mobile': jsonData.get('mobile'), 'name': jsonData.get('username')}
                 serializer = UserProfileSerializer(data=data)
                 if serializer.is_valid(raise_exception=True):
                     serializer.save()
+                instance = UserProfile.objects.filter(username=jsonData.get('username')).first()
+                instance.password = password
+                instance.save()
 
                 # 缓存token
                 jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
@@ -145,7 +149,6 @@ class RegisterView(ObtainJSONWebToken):
                 self.save_login_infor(request, '注册成功', session_id=session_id)
                 return response
         except Exception as e:
-            print(e)
             return ErrorResponse(msg='未知错误')
 
 
