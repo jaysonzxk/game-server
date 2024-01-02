@@ -302,7 +302,7 @@ REST_FRAMEWORK = {
 # ================================================= #
 AUTHENTICATION_BACKENDS = (
     'apps.app.utils.backends.CustomBackend',
-    'apps.app.utils.backends.SessionAuthentication',
+    # 'apps.app.utils.backends.SessionAuthentication',
 )
 AUTH_USER_MODEL = 'permission.UserProfile'
 # username_field

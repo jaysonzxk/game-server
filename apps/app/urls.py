@@ -22,6 +22,7 @@ from django.urls import re_path, include
 from rest_framework.views import APIView
 
 from apps.app.utils.login import LogoutView, AppLoginView, GetPhoneCode
+from apps.app.utils.register import RegisterView
 from apps.app.op_drf.response import SuccessResponse
 from apps.app.utils.upload import ImageUploadView
 
@@ -45,6 +46,7 @@ urlpatterns = [
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework1')),
     re_path(r'^login$', AppLoginView.as_view()),
     re_path(r'^logout/$', LogoutView.as_view()),
+    re_path(r'^register', RegisterView.as_view()),
     re_path(r'^getCode$', GetPhoneCode.as_view()),
     # 首页
     re_path(r'^home/', include('apps.app.home.urls')),

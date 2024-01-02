@@ -944,3 +944,17 @@ AssertionError: The field 'gameCategory' was declared on serializer GameManufact
            ^^^^^^^^^^^^^^^^^^^^
 AssertionError: The field 'gameCategory' was declared on serializer GameManufacturerSerializer, but has not been included in the 'fields' option.
 
+[2024-01-02 20:34:21,727][django.request.log_response():222] [ERROR] Internal Server Error: /api/app/register
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/middleware/common.py", line 86, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/app/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
