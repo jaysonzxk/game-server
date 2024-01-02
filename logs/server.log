@@ -1103,3 +1103,219 @@ TypeError: int() argument must be a string, a bytes-like object or a real number
 [2023-12-29 12:23:34,012][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
 [2023-12-29 12:24:17,619][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
 [2023-12-29 12:24:18,689][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:43:02,029][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 12:43:03,332][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:43:11,549][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:44:55,939][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 12:44:57,126][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:45:42,202][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 12:45:43,368][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:56:29,606][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 12:56:30,981][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:57:08,188][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 12:57:09,240][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:57:27,128][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 12:57:27,964][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:57:36,063][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameManufacturer' object has no attribute 'category'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `category` on serializer `GameManufacturerSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `GameManufacturer` instance.
+Original exception text was: 'GameManufacturer' object has no attribute 'category'.
+
+[2023-12-29 12:57:43,015][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 12:57:43,954][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:57:47,236][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameManufacturer' object has no attribute 'category'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `category` on serializer `GameManufacturerSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `GameManufacturer` instance.
+Original exception text was: 'GameManufacturer' object has no attribute 'category'.
+
+[2023-12-29 12:58:35,776][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 12:58:36,732][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:58:41,004][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    for field in fields:
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 63, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 1029, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 1125, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'gameCategory' was declared on serializer GameManufacturerSerializer, but has not been included in the 'fields' option.
+
+[2023-12-29 12:58:53,966][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 12:58:54,938][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 12:58:58,950][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    for field in fields:
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 63, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 1029, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 1125, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'gameCategory' was declared on serializer GameManufacturerSerializer, but has not been included in the 'fields' option.
+
+[2023-12-29 20:00:11,344][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/mixins.py", line 47, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+           ^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    for field in fields:
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/apps/admin/op_drf/serializers.py", line 63, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 1029, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 1125, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'gameCategory' was declared on serializer GameManufacturerSerializer, but has not been included in the 'fields' option.
+
+[2023-12-29 20:08:57,142][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/serializers.py changed, reloading.
+[2023-12-29 20:08:58,560][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2023-12-29 20:11:24,166][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload/, 权限认证:10
+[2023-12-29 20:11:56,015][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload/, 权限认证:10
+[2023-12-29 20:13:28,797][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload/, 权限认证:10

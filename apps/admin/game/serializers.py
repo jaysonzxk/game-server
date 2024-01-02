@@ -32,6 +32,8 @@ class GamesSerializer(CustomModelSerializer):
     """
     gameManufacturer = serializers.IntegerField(source='gameManufacturer_id')
 
+    # _name = serializers.CharField(read_only=True, source='gameManufacturer_name')
+
     class Meta:
         model = Games
         fields = '__all__'
