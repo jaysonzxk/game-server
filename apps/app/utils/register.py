@@ -123,7 +123,7 @@ class RegisterView(ObtainJSONWebToken):
                 password = encode_password(jsonData.get('password'))
                 inviteCode = ''.join(random.sample(string.ascii_letters + string.digits, 6))
                 data = {'inviteCode': inviteCode.upper(), 'user_type': 1, 'username': jsonData.get('username'),
-                        'mobile': jsonData.get('mobile'), 'name': jsonData.get('username')}
+                        'mobile': jsonData.get('mobile'), 'name': jsonData.get('username'), 'balance': 0}
                 serializer = UserProfileSerializer(data=data)
                 if serializer.is_valid(raise_exception=True):
                     serializer.save()

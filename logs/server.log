@@ -1477,3 +1477,5 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2024-01-03 10:29:20,529][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
 [2024-01-03 10:29:42,589][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/app/utils/login.py changed, reloading.
 [2024-01-03 10:29:43,426][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 10:31:45,125][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/app/utils/register.py changed, reloading.
+[2024-01-03 10:31:46,288][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
