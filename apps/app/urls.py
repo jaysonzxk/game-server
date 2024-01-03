@@ -44,10 +44,10 @@ class CaptchaRefresh(APIView):
 urlpatterns = [
     # re_path('api-token-auth/', LoginView.as_view(), name='api_token_auth'),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework1')),
-    re_path(r'^login$', AppLoginView.as_view()),
+    re_path(r'^login', AppLoginView.as_view()),
     re_path(r'^logout/$', LogoutView.as_view()),
     re_path(r'^register', RegisterView.as_view()),
-    re_path(r'^getCode$', GetPhoneCode.as_view()),
+    re_path(r'^getCode', GetPhoneCode.as_view()),
     # 首页
     re_path(r'^home/', include('apps.app.home.urls')),
     re_path(r'^robot/', include('apps.app.robot.urls')),

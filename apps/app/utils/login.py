@@ -88,66 +88,93 @@ class AppLoginView(ObtainJSONWebToken):
         key = None
         token = None
         _dict = {}
-        if data.get('loginType') == 0:
-            if data.get('mobile'):
-                if cache.get(data.get('mobile')) is None:
-                    return ErrorResponse(msg='验证码已失效')
-                if str(data.get('code')) != json.loads(cache.get(data.get('mobile'))).get('code'):
-                    return ErrorResponse(msg='验证码错误')
-                try:
-                    user = UserProfile.objects.filter(mobile=data.get('mobile')).first()
-                    if user:
-                        try:
-                            userObj = UserProfile.objects.filter(mobile=data.get('mobile')).first()
-                            data["name"] = userObj.name
-                            data["userId"] = userObj.id
-                            data["avatar"] = userObj.avatar
-                            data['user_type'] = userObj.user_type
-                            data['mobile'] = userObj.mobile
-                            data['email'] = userObj.email
-                        except Exception as e:
-                            return ErrorResponse(msg='参数错误')
-                    else:
-                        del data['code']
-                        data['user_type'] = 1
-                        data['username'] = data.get('mobile')
-                        import random
-                        data['name'] = data.get('mobile')
-                        inviteCode = ''.join(random.sample(string.ascii_letters + string.digits, 6))
-                        data['inviteCode'] = inviteCode.upper()  # 邀请码
-                        serializer = UserProfileSerializer(data=data)
-                        if serializer.is_valid(raise_exception=True):
-                            serializer.save()
-                        try:
-                            userObj = UserProfile.objects.filter(mobile=data.get('mobile')).first()
-                            data["name"] = userObj.name
-                            data["userId"] = userObj.id
-                            data["avatar"] = userObj.avatar
-                            data['user_type'] = userObj.user_type
-                            data['mobile'] = userObj.mobile
-                            data['email'] = userObj.email
-                        except Exception as e:
-                            return ErrorResponse(msg='参数错误')
-                    payload = jwt_payload_handler(userObj)
-                    token = jwt_encode_handler(payload)
-                    _dict = {'id': userObj.id, 'mobile': userObj.mobile, 'email': userObj.email, 'token': token}
-                    session_id = jwt_get_session_id(token)
-                    key = f"{self.prefix}_{session_id}_{userObj.username}"
-                    # 单点登录
-                    last_token = cache.get(key)
-                    if last_token:
-                        cache.delete(key)
-                    cache.set(key, json.dumps(_dict), 2592000)  # 一个月到期
-                    res = {'access': token, **data}
-                    # save_login_log(request)
-                    self.save_login_infor(request, '登录成功', session_id=session_id)
-                    return DetailResponse(data=res)
-                except Exception as e:
-                    return ErrorResponse(msg='未知错误')
-        if data.get('loginType') == 1:
-            pass
-        else:
-            return ErrorResponse(msg='参数错误')
+        if data:
+            if data.get('loginType') == 0:
+                if data.get('mobile'):
+                    if cache.get(data.get('mobile')) is None:
+                        return ErrorResponse(msg='验证码已失效')
+                    if str(data.get('code')) != json.loads(cache.get(data.get('mobile'))).get('code'):
+                        return ErrorResponse(msg='验证码错误')
+                    try:
+                        user = UserProfile.objects.filter(mobile=data.get('mobile')).first()
+                        if user:
+                            try:
+                                userObj = UserProfile.objects.filter(mobile=data.get('mobile')).first()
+                                data["name"] = userObj.name
+                                data["userId"] = userObj.id
+                                data["avatar"] = userObj.avatar
+                                data['user_type'] = userObj.user_type
+                                data['mobile'] = userObj.mobile
+                                data['email'] = userObj.email
+                            except Exception as e:
+                                return ErrorResponse(msg='参数错误')
+                        else:
+                            del data['code']
+                            data['user_type'] = 1
+                            data['username'] = data.get('mobile')
+                            import random
+                            data['name'] = data.get('mobile')
+                            inviteCode = ''.join(random.sample(string.ascii_letters + string.digits, 6))
+                            data['inviteCode'] = inviteCode.upper()  # 邀请码
+                            serializer = UserProfileSerializer(data=data)
+                            if serializer.is_valid(raise_exception=True):
+                                serializer.save()
+                            try:
+                                userObj = UserProfile.objects.filter(mobile=data.get('mobile')).first()
+                                data["name"] = userObj.name
+                                data["userId"] = userObj.id
+                                data["avatar"] = userObj.avatar
+                                data['user_type'] = userObj.user_type
+                                data['mobile'] = userObj.mobile
+                                data['email'] = userObj.email
+                            except Exception as e:
+                                return ErrorResponse(msg='参数错误')
+                        payload = jwt_payload_handler(userObj)
+                        token = jwt_encode_handler(payload)
+                        _dict = {'id': userObj.id, 'mobile': userObj.mobile, 'email': userObj.email, 'token': token}
+                        session_id = jwt_get_session_id(token)
+                        key = f"{self.prefix}_{session_id}_{userObj.username}"
+                        # 单点登录
+                        last_token = cache.get(key)
+                        if last_token:
+                            cache.delete(key)
+                        cache.set(key, json.dumps(_dict), 2592000)  # 一个月到期
+                        res = {'token': token}
+                        self.save_login_infor(request, '登录成功', session_id=session_id)
+                        return DetailResponse(data=res)
+                    except Exception as e:
+                        return ErrorResponse(msg='未知错误')
+            if data.get('loginType') == 1:
+                from apps.app.utils.encryption import encode_password
+                if data.get('username'):
+                    try:
+                        userObj = UserProfile.objects.filter(username=data.get('username'))
+                        if not userObj.exists():
+                            return ErrorResponse(msg='账号不存在')
+                        else:
+                            password1 = userObj.first().password
+                            password2 = encode_password(data.get('password'))
+                            if password1 != password2:
+                                return ErrorResponse(msg='账号或密码错误')
+                            payload = jwt_payload_handler(userObj.first())
+                            token = jwt_encode_handler(payload)
+                            _dict = {'id': userObj.first().id, 'mobile': userObj.first().mobile,
+                                     'email': userObj.first().email, 'token': token}
+                            session_id = jwt_get_session_id(token)
+                            key = f"{self.prefix}_{session_id}_{userObj.first().username}"
+                            # 单点登录
+                            last_token = cache.get(key)
+                            if last_token:
+                                cache.delete(key)
+                            cache.set(key, json.dumps(_dict), 2592000)  # 一个月到期
+                            res = {'token': token}
+                            self.save_login_infor(request, '登录成功', session_id=session_id)
+                            return DetailResponse(data=res)
+                    except Exception as e:
+                        return ErrorResponse(msg='未知错误')
+            else:
+                return ErrorResponse(msg='参数错误')
+        return ErrorResponse(msg='参数错误')
 
 
 class CustomTokenRefreshView(TokenRefreshView):
