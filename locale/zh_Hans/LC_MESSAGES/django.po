@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-03 15:03+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: apps/admin/utils/authentication.py:35 apps/app/utils/authentication.py:35
+msgid "Signature has expired."
+msgstr ""
+
+#: apps/admin/utils/authentication.py:38 apps/app/utils/authentication.py:38
+msgid "Error decoding signature."
+msgstr ""
+
+#: apps/app/utils/login.py:96
+msgid "验证码已失效"
+msgstr "验证码已失效"
+
+#: apps/app/utils/login.py:98
+msgid "验证码错误"
+msgstr "验证码错误"
+
+#: apps/app/utils/login.py:111 apps/app/utils/login.py:132
+#: apps/app/utils/login.py:177 apps/app/utils/login.py:178
+msgid "参数错误"
+msgstr "参数错误"
+
+#: apps/app/utils/login.py:147 apps/app/utils/login.py:175
+msgid "未知错误"
+msgstr "未知错误"
+
+#: apps/app/utils/login.py:154
+msgid "账号不存在"
+msgstr "账号不存在"
+
+#: apps/app/utils/login.py:173
+msgid "登录成功"
+msgstr "登录成功"

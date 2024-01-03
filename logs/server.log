@@ -1592,3 +1592,8 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2024-01-03 18:47:25,670][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/logout/, 权限认证:10
 [2024-01-03 20:01:10,198][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/logout/, 权限认证:10
 [2024-01-03 20:13:11,705][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/logout/, 权限认证:10
+[2024-01-03 20:19:23,433][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 20:19:27,681][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 20:19:31,110][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 20:19:37,397][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 20:36:30,657][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/logout/, 权限认证:10
