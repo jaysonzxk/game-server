@@ -6,6 +6,7 @@ import json
 import logging
 import os
 from uuid import uuid4
+from django.utils.translation import gettext as _
 
 from captcha.models import CaptchaStore
 from captcha.views import captcha_image
@@ -34,6 +35,7 @@ from apps.admin.permission.models import UserProfile
 from apps.admin.utils.json_response import DetailResponse, SuccessResponse, ErrorResponse
 from apps.admin.utils.request_util import get_request_ip, get_login_location, get_os
 from apps.admin.utils.serializers import CustomModelSerializer
+from apps.admin.utils.encryption import encode_password
 
 logger = logging.getLogger(__name__)
 
@@ -102,28 +104,40 @@ class LoginView(ObtainJSONWebToken):
         instance.save()
 
     def post(self, request: Request, *args, **kwargs):
-        data = request.data
-        serializer = self.get_serializer(data=request.data)
-        if serializer.is_valid():
-            user = serializer.object.get('user') or request.user
-            jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
-            jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
-            payload = jwt_payload_handler(user)
-            token = jwt_encode_handler(payload)
-            response_data = jwt_response_payload_handler(token, user, request)
-            response = SuccessResponse(response_data)
-            _dict = {'id': user.id, 'username': user.username, 'email': user.email, 'token': token}
-            session_id = jwt_get_session_id(token)
-            key = f"{self.prefix}_{session_id}_{user.username}"
-            last_token = cache.get(key)
-            if last_token:
-                cache.delete(key)
-            cache.set(key, json.dumps(_dict), 2592000)  # 一个月到期
-            # response_data = jwt_response_payload_handler(token, user, request)
-            res = {'access': token, **data}
-            self.save_login_infor(request, '登录成功', session_id=session_id)
-            return response
-        return ErrorResponse(data=serializer.errors, msg='账户/密码不正确')
+        jsonData = request.data
+        if jsonData:
+            if jsonData.get('username') is None or jsonData.get('password') is None:
+                return ErrorResponse(msg=_('账号或密码不能为空'))
+            try:
+                userObj = UserProfile.objects.filter(username=jsonData.get('username'))
+                if userObj.first().user_type != 0:
+                    return ErrorResponse(msg=_('没有登录权限'))
+                if userObj.exists():
+                    if encode_password(jsonData.get('password')) != userObj.first().password:
+                        return ErrorResponse(msg=_('账号或密码错误'))
+                    else:
+                        user = userObj.first()
+                        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+                        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+                        payload = jwt_payload_handler(user)
+                        token = jwt_encode_handler(payload)
+                        response_data = jwt_response_payload_handler(token, user, request)
+                        response = SuccessResponse(response_data)
+                        _dict = {'id': user.id, 'username': user.username, 'email': user.email, 'token': token}
+                        session_id = jwt_get_session_id(token)
+                        key = f"{self.prefix}_{session_id}_{user.username}"
+                        last_token = cache.get(key)
+                        if last_token:
+                            cache.delete(key)
+                        cache.set(key, json.dumps(_dict), 2592000)  # 一个月到期
+                        # response_data = jwt_response_payload_handler(token, user, request)
+                        res = {'access': token, **jsonData}
+                        self.save_login_infor(request, '登录成功', session_id=session_id)
+                        return response
+                return ErrorResponse(msg=_('账号或密码错误'))
+            except Exception as e:
+                return ErrorResponse(msg=_('未知错误'))
+        return DetailResponse()
 
 
 class CustomTokenRefreshView(TokenRefreshView):

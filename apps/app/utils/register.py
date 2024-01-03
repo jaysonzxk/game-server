@@ -8,6 +8,7 @@ import os
 import random
 import string
 from uuid import uuid4
+from django.utils.translation import gettext as _
 
 from captcha.models import CaptchaStore
 from captcha.views import captcha_image
@@ -119,7 +120,7 @@ class RegisterView(ObtainJSONWebToken):
                 user = UserProfile.objects.filter(
                     Q(username=jsonData.get('username')) | Q(mobile=jsonData.get('mobile')))
                 if user.exists():
-                    return ErrorResponse(msg='用户名或手机号已存在')
+                    return ErrorResponse(msg=_('用户名或手机号已存在'))
                 password = encode_password(jsonData.get('password'))
                 inviteCode = ''.join(random.sample(string.ascii_letters + string.digits, 6))
                 data = {'inviteCode': inviteCode.upper(), 'user_type': 1, 'username': jsonData.get('username'),
@@ -137,7 +138,7 @@ class RegisterView(ObtainJSONWebToken):
                 payload = jwt_payload_handler(user.first())
                 token = jwt_encode_handler(payload)
                 response_data = jwt_response_payload_handler(token, user.first(), request)
-                response = DetailResponse(response_data)
+                response = DetailResponse(response_data, msg=_('注册成功'))
                 _dict = {'id': user.first().id, 'username': user.first().username, 'token': token}
                 session_id = jwt_get_session_id(token)
                 key = f"{self.prefix}_{session_id}_{user.first().username}"
@@ -149,7 +150,7 @@ class RegisterView(ObtainJSONWebToken):
                 self.save_login_infor(request, '注册成功', session_id=session_id)
                 return response
         except Exception as e:
-            return ErrorResponse(msg='未知错误')
+            return ErrorResponse(msg=_('未知错误'))
 
 
 class CustomTokenRefreshView(TokenRefreshView):

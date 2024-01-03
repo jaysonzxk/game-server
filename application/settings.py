@@ -131,10 +131,14 @@ USE_L10N = True
 
 USE_TZ = True
 
+# 国际化语言种类
+from django.utils.translation import gettext_lazy as _
+
 LANGUAGES = [
     ('en', 'English'),
-    ('zh-hans', 'Simplified Chinese'),
-    ('zh-hans', 'Simplified Chinese'),
+    ('zh-hans', '中文简体'),
+    ('vi', 'Tiếng Việt'),
+    ('ko', '한국인'),
 ]
 
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]

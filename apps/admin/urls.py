@@ -45,7 +45,7 @@ class CaptchaRefresh(APIView):
 urlpatterns = [
     re_path('api-token-auth/', LoginView.as_view(), name='api_token_auth'),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    re_path(r'^login/$', LoginView.as_view()),
+    re_path(r'^login', LoginView.as_view()),
     re_path(r'^logout/$', LogoutView.as_view()),
     re_path(r'^getInfo/$', GetUserProfileView.as_view()),
     re_path(r'^getRouters/$', GetRouters.as_view()),

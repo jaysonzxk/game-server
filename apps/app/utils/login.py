@@ -263,11 +263,11 @@ class GetPhoneCode(APIView):
         }
         if mobile:
             if self.verify_times(mobile) is False:
-                return ErrorResponse(msg='请求频繁,请稍后重试')
+                return ErrorResponse(msg=_('请求频繁,请稍后重试'))
             if self.verify_phone(mobile) is None:
-                return ErrorResponse(msg='手机号格式不正确')
+                return ErrorResponse(msg=_('手机号格式不正确'))
             else:
                 cache.set(key, json.dumps(code), 300)
         else:
-            return ErrorResponse(msg='参数错误')
-        return DetailResponse(data=code)
+            return ErrorResponse(msg=_('参数错误'))
+        return DetailResponse(data=code, msg=_('发送成功'))
