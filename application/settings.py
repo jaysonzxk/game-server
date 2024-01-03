@@ -70,6 +70,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'admin.op_drf.middleware.ApiLoggingMiddleware',  # 用于记录API访问日志
     'admin.op_drf.middleware.PermissionModeMiddleware',  # 权限中间件
+    'django.middleware.locale.LocaleMiddleware'  # 国际化
 ]
 # 允许跨域源
 CORS_ORIGIN_ALLOW_ALL = CORS_ORIGIN_ALLOW_ALL
@@ -130,6 +131,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+LANGUAGES = [
+    ('en', 'English'),
+    ('zh-hans', 'Simplified Chinese'),
+    ('zh-hans', 'Simplified Chinese'),
+]
+
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 """

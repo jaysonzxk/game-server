@@ -7,6 +7,7 @@ import string
 from random import choice
 import calendar
 import time
+from django.utils.translation import gettext as _
 
 from captcha.models import CaptchaStore
 from captcha.views import captcha_image
@@ -92,9 +93,9 @@ class AppLoginView(ObtainJSONWebToken):
             if data.get('loginType') == 0:
                 if data.get('mobile'):
                     if cache.get(data.get('mobile')) is None:
-                        return ErrorResponse(msg='验证码已失效')
+                        return ErrorResponse(msg=_('验证码已失效'))
                     if str(data.get('code')) != json.loads(cache.get(data.get('mobile'))).get('code'):
-                        return ErrorResponse(msg='验证码错误')
+                        return ErrorResponse(msg=_('验证码错误'))
                     try:
                         user = UserProfile.objects.filter(mobile=data.get('mobile')).first()
                         if user:
@@ -107,7 +108,7 @@ class AppLoginView(ObtainJSONWebToken):
                                 data['mobile'] = userObj.mobile
                                 data['email'] = userObj.email
                             except Exception as e:
-                                return ErrorResponse(msg='参数错误')
+                                return ErrorResponse(msg=_('参数错误'))
                         else:
                             del data['code']
                             data['user_type'] = 1
@@ -128,7 +129,7 @@ class AppLoginView(ObtainJSONWebToken):
                                 data['mobile'] = userObj.mobile
                                 data['email'] = userObj.email
                             except Exception as e:
-                                return ErrorResponse(msg='参数错误')
+                                return ErrorResponse(msg=_('参数错误'))
                         payload = jwt_payload_handler(userObj)
                         token = jwt_encode_handler(payload)
                         _dict = {'id': userObj.id, 'mobile': userObj.mobile, 'email': userObj.email, 'token': token}
@@ -143,14 +144,14 @@ class AppLoginView(ObtainJSONWebToken):
                         self.save_login_infor(request, '登录成功', session_id=session_id)
                         return DetailResponse(data=res)
                     except Exception as e:
-                        return ErrorResponse(msg='未知错误')
+                        return ErrorResponse(msg=_('未知错误'))
             if data.get('loginType') == 1:
                 from apps.app.utils.encryption import encode_password
                 if data.get('username'):
                     try:
                         userObj = UserProfile.objects.filter(username=data.get('username'))
                         if not userObj.exists():
-                            return ErrorResponse(msg='账号不存在')
+                            return ErrorResponse(msg=_('账号不存在'))
                         else:
                             password1 = userObj.first().password
                             password2 = encode_password(data.get('password'))
@@ -169,12 +170,12 @@ class AppLoginView(ObtainJSONWebToken):
                             cache.set(key, json.dumps(_dict), 2592000)  # 一个月到期
                             res = {'token': token}
                             self.save_login_infor(request, '登录成功', session_id=session_id)
-                            return DetailResponse(data=res)
+                            return DetailResponse(data=res, msg=_('登录成功'))
                     except Exception as e:
-                        return ErrorResponse(msg='未知错误')
+                        return ErrorResponse(msg=_('未知错误'))
             else:
-                return ErrorResponse(msg='参数错误')
-        return ErrorResponse(msg='参数错误')
+                return ErrorResponse(msg=_('参数错误'))
+        return ErrorResponse(msg=_('参数错误'))
 
 
 class CustomTokenRefreshView(TokenRefreshView):

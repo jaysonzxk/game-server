@@ -1479,3 +1479,53 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2024-01-03 10:29:43,426][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
 [2024-01-03 10:31:45,125][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/app/utils/register.py changed, reloading.
 [2024-01-03 10:31:46,288][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 10:38:10,229][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 10:38:11,700][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 10:39:00,527][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 10:39:02,097][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 10:39:52,177][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 10:39:53,324][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 10:41:03,987][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 10:41:05,200][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 10:41:26,324][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 10:41:27,739][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 10:43:45,362][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 10:43:46,568][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 10:44:00,337][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 10:44:01,475][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 10:47:43,870][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/app/utils/login.py changed, reloading.
+[2024-01-03 10:47:45,199][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 11:40:38,132][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 11:40:39,467][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 11:41:13,589][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 11:52:43,317][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 11:53:09,020][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/app/utils/login.py changed, reloading.
+[2024-01-03 11:53:10,071][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 11:53:44,937][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/app/utils/login.py changed, reloading.
+[2024-01-03 11:53:45,768][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 11:58:43,048][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 11:59:27,098][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 11:59:46,446][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 11:59:51,564][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:18:26,112][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:18:34,458][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:27:45,892][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 12:27:47,452][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 12:33:55,184][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/app/utils/login.py changed, reloading.
+[2024-01-03 12:33:56,276][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 12:36:03,244][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:36:09,199][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:36:24,386][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 12:36:27,999][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:36:34,872][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:39:08,907][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 12:39:12,701][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:39:19,068][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:40:13,289][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 12:40:46,079][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:40:54,817][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:41:10,492][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 12:41:14,185][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:41:18,157][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 12:41:22,064][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
+[2024-01-03 12:41:39,726][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
