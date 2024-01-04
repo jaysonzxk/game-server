@@ -50,7 +50,6 @@ urlpatterns = [
     re_path(r'^getCode', GetPhoneCode.as_view()),
     # 首页
     re_path(r'^home/', include('apps.app.home.urls')),
-    re_path(r'^robot/', include('apps.app.robot.urls')),
     re_path(r'^order/', include('apps.app.order.urls')),
     re_path(r'^mine/', include('apps.app.mine.urls')),
 

@@ -1,5 +1,4 @@
 from rest_framework.request import Request
-from rest_framework.views import APIView
 from django.db import transaction
 
 from apps.app.op_drf.response import SuccessResponse, ErrorResponse

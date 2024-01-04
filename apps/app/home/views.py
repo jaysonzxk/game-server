@@ -1,18 +1,13 @@
 from rest_framework.request import Request
-from rest_framework.views import APIView
-from django.db import transaction
 
-from apps.admin.order.filters import QuantifyOrdersFilter, IncomeRankFilter
-from apps.admin.order.models import QuantifyOrders
+from apps.admin.order.filters import IncomeRankFilter
 from apps.admin.order.models.order import IncomeRank
-from apps.admin.order.serializers import QuantifyOrdersSerializer, IncomeRankSerializer
+from apps.admin.order.serializers import IncomeRankSerializer
 from apps.app.op_drf.response import SuccessResponse, ErrorResponse
-from apps.app.op_drf.filters import DataLevelPermissionsFilter
 from apps.app.op_drf.viewsets import CustomModelViewSet
 from apps.admin.system.filters import BannersFilter, AnnouncementFilter, MarqueeFilter
 from apps.admin.system.serializers import BannersSerializer, AnnouncementSerializer, MarqueeSerializer
 from apps.admin.system.models import Banners, Announcement, Marquee
-from apps.app.utils.income_rank_data import generate_data
 from apps.app.utils.json_response import DetailResponse
 
 
@@ -107,19 +102,3 @@ class IncomeRankViewSet(CustomModelViewSet):
             return SuccessResponse(page)
         serializer = self.get_serializer(queryset, many=True)
         return SuccessResponse(serializer.data)
-
-
-class IncomeViewSet(CustomModelViewSet):
-    """
-    收益展示  的CRUD视图
-    """
-    queryset = QuantifyOrders.objects.filter(status=1)
-    serializer_class = QuantifyOrdersSerializer
-    filter_class = QuantifyOrdersFilter
-    authentication_classes = []
-    permission_classes = []
-    # ordering = '-income'  # 默认排序
-
-    def get_income_list(self, request: Request, *args, **kwargs):
-        res = generate_data(50)
-        return DetailResponse(res)

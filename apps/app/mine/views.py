@@ -1,23 +1,14 @@
-import time
-
 from rest_framework.request import Request
-from rest_framework.views import APIView
-from django.db import transaction
 
-from apps.admin.member.models import UserVip, UserRobot
+from apps.admin.member.models import UserVip
 from apps.admin.pay.filters import PayChannelFilter
-from apps.admin.pay.models import payChannel, PayChannel
+from apps.admin.pay.models import PayChannel
 from apps.admin.pay.serializers import PayChannelSerializer
 from apps.app.op_drf.response import SuccessResponse, ErrorResponse
-from apps.app.op_drf.filters import DataLevelPermissionsFilter
 from apps.app.op_drf.viewsets import CustomModelViewSet
 from apps.admin.permission.filters import UserProfileFilter
 from apps.admin.permission.serializers import UserProfileSerializer
 from apps.admin.permission.models import UserProfile
-from apps.admin.member.serializers import VipCardSerializer
-from apps.admin.member.models import VipCard, Robot
-from apps.admin.member.serializers import VipCardSerializer, RobotSerializer
-from apps.admin.member.filters import VipCardFilter, RobotFilter
 
 
 class UserModelViewSet(CustomModelViewSet):
@@ -34,15 +25,10 @@ class UserModelViewSet(CustomModelViewSet):
         userRobot = {}
         try:
             userVipObj = UserVip.objects.filter(user_id=user.id).first()
-            userRobotObj  = UserRobot.objects.filter(user_id=user.id).first()
             if userVipObj:
                 userVip['name'] = userVipObj.vipCard.name
                 userVip['expiration'] = userVipObj.expiration
                 userVip['isExpiration'] = userVipObj.isExpiration
-            if userRobotObj:
-                userRobot['name'] = userRobotObj.robot.name
-                userRobot['expiration'] = userRobotObj.expiration
-                userRobot['isExpiration'] = userRobotObj.isExpiration
             if user:
                 data = {
                     'id': user.id,
@@ -56,29 +42,10 @@ class UserModelViewSet(CustomModelViewSet):
                     'gender': user.gender,
                     'balance': user.balance,
                     'userVip': userVip if userVipObj else None,
-                    'userRobot': userRobot if userRobotObj else None
                 }
                 return SuccessResponse(data=data)
         except Exception as e:
             return ErrorResponse(msg='未知错误')
-
-
-class RobotModelViewSet(CustomModelViewSet):
-    """
-    机器人列表 的CRUD视图
-    """
-    queryset = Robot.objects.filter(isDel=0).filter(status=1)
-    serializer_class = RobotSerializer
-    authentication_classes = []
-    permission_classes = []
-    filter_class = RobotFilter
-
-    def get_robot_list(self, request: Request, *args, **kwargs):
-        if hasattr(self, 'handle_logging'):
-            self.handle_logging(request, *args, **kwargs)
-        queryset = self.filter_queryset(self.get_queryset())
-        serializer = self.get_serializer(queryset, many=True)
-        return SuccessResponse(serializer.data)
 
 
 class PayChannelModelViewSet(CustomModelViewSet):

@@ -1851,3 +1851,21 @@ drf_yasg.errors.SwaggerGenerationError: Schema for <class 'apps.admin.member.ser
 [2024-01-04 10:32:44,905][drf_yasg.generators.get_path_from_regex():35] [WARNING] url pattern does not end in $ ('media/(?P<path>.*)') - unexpected things might happen
 [2024-01-04 10:38:01,707][drf_yasg.generators.get_path_from_regex():35] [WARNING] url pattern does not end in $ ('media/(?P<path>.*)') - unexpected things might happen
 [2024-01-04 11:22:03,004][drf_yasg.generators.get_path_from_regex():35] [WARNING] url pattern does not end in $ ('media/(?P<path>.*)') - unexpected things might happen
+[2024-01-04 11:27:00,571][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/member/models/__init__.py changed, reloading.
+[2024-01-04 11:27:01,902][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 11:27:40,094][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/member/views.py changed, reloading.
+[2024-01-04 11:27:40,925][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 11:28:23,344][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/member/filters.py changed, reloading.
+[2024-01-04 11:28:24,224][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 11:28:55,907][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/member/serializers.py changed, reloading.
+[2024-01-04 11:28:56,741][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 11:32:40,736][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/order/models/__init__.py changed, reloading.
+[2024-01-04 11:32:41,565][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 11:34:22,827][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/order/filters.py changed, reloading.
+[2024-01-04 11:34:23,730][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 11:34:48,205][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/app/home/views.py changed, reloading.
+[2024-01-04 11:34:49,044][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 11:35:08,159][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/app/home/urls.py changed, reloading.
+[2024-01-04 11:35:09,026][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 11:38:22,415][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/app/home/views.py changed, reloading.
+[2024-01-04 11:38:23,576][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader

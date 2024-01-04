@@ -1,20 +1,12 @@
 from rest_framework.request import Request
-from rest_framework.views import APIView
 from django.db import transaction
 
-from apps.admin.order.filters import QuantifyOrdersFilter, IncomeRankFilter
-from apps.admin.order.models import QuantifyOrders
-from apps.admin.order.models.order import IncomeRank
-from apps.admin.order.serializers import QuantifyOrdersSerializer, IncomeRankSerializer
 from apps.admin.pay.models import PayChannel
-from apps.app.op_drf.response import SuccessResponse, ErrorResponse
-from apps.app.op_drf.filters import DataLevelPermissionsFilter
+from apps.app.op_drf.response import SuccessResponse
 from apps.app.op_drf.viewsets import CustomModelViewSet
 from apps.admin.member.filters import VipCardFilter, UserVipCardFilter
 from apps.admin.member.serializers import VipCardSerializer, UserVipCardSerializer
 from apps.admin.member.models import VipCard, UserVip
-from apps.app.utils.income_rank_data import generate_data
-from apps.app.utils.json_response import DetailResponse
 from apps.app.utils.pay import Pay
 
 

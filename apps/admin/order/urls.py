@@ -1,13 +1,10 @@
 from django.urls import re_path
 from rest_framework.routers import DefaultRouter
 
-from apps.admin.order.views import QuantifyOrdersModelViewSet, PurchaseRobotOrdersModelViewSet, PurchaseVipOrdersModelViewSet, PayOrdersModelViewSet
+from apps.admin.order.views import PurchaseVipOrdersModelViewSet
 
 router = DefaultRouter()
-router.register(r'quantifyOrders', QuantifyOrdersModelViewSet)
-router.register(r'purchaseRobotOrders', PurchaseRobotOrdersModelViewSet)
 router.register(r'purchaseVipOrders', PurchaseVipOrdersModelViewSet)
-router.register(r'payOrders', PayOrdersModelViewSet)
 
 urlpatterns = [
     # re_path('monitor/info/(?P<pk>.*)/', MonitorModelViewSet.as_view({'get': 'get_monitor_info'})),

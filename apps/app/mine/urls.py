@@ -1,7 +1,7 @@
 from django.urls import re_path
 from rest_framework.routers import DefaultRouter
 
-from apps.app.mine.views import UserModelViewSet, RobotModelViewSet, PayChannelModelViewSet, PromotionModelViewSet
+from apps.app.mine.views import UserModelViewSet, PayChannelModelViewSet, PromotionModelViewSet
 from apps.app.mine.vip.views import ByVipModelViewSet, VipModelViewSet
 from apps.app.mine.wallet.views import AmountConfigModelViewSet
 
@@ -19,7 +19,6 @@ urlpatterns = [
     re_path('wallet/amonut/list', AmountConfigModelViewSet.as_view({'get': 'get_amount_list'})),
 
 
-    re_path('robot/list', RobotModelViewSet.as_view({'get': 'get_robot_list'})),
     re_path('channel/list', PayChannelModelViewSet.as_view({'get': 'get_channel_list'})),
     # 推广列表
     re_path('promotion/list', PromotionModelViewSet.as_view({'get': 'get_promotion_list'})),
