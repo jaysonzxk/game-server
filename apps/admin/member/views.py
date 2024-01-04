@@ -7,9 +7,9 @@ from apps.admin.member.models.userExchangeConfig import Exchange
 from apps.admin.op_drf.response import SuccessResponse, ErrorResponse
 from apps.admin.op_drf.filters import DataLevelPermissionsFilter
 from apps.admin.op_drf.viewsets import CustomModelViewSet
-from apps.admin.member.filters import UserProfileFilter, VipCardFilter, UserVipCardFilter, ExchangeFilter, \
+from apps.admin.member.filters import MemberFilter, VipCardFilter, UserVipCardFilter, ExchangeFilter, \
     UserExchangeConfigFilter, RobotFilter, UserRobotFilter
-from apps.admin.member.serializers import UserProfileSerializer, UserVipCardSerializer, VipCardSerializer, \
+from apps.admin.member.serializers import MemberSerializer, UserVipCardSerializer, VipCardSerializer, \
     ExchangeSerializer, UserExchangeConfigSerializer, RobotSerializer, UserRobotSerializer
 from apps.admin.member.models import VipCard, UserVip, UserExchangeConfig, Robot, UserRobot
 
@@ -22,7 +22,7 @@ class GetUserProfileView(APIView):
     """
 
     def get(self, request, format=None):
-        user_dict = UserProfileSerializer(request.user).data
+        user_dict = MemberSerializer(request.user).data
 
         return SuccessResponse({
             'user': user_dict
@@ -34,8 +34,8 @@ class UserProfileModelViewSet(CustomModelViewSet):
     用户管理 的CRUD视图
     """
     queryset = UserProfile.objects.filter(user_type=1)
-    serializer_class = UserProfileSerializer
-    filter_class = UserProfileFilter
+    serializer_class = MemberSerializer
+    filter_class = MemberFilter
     extra_filter_backends = [DataLevelPermissionsFilter]
     search_fields = ('username',)
     ordering = 'create_datetime'  # 默认排序

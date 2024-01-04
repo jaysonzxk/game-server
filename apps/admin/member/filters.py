@@ -8,7 +8,7 @@ from apps.admin.utils.model_util import get_dept
 UserProfile = get_user_model()
 
 
-class UserProfileFilter(django_filters.rest_framework.FilterSet):
+class MemberFilter(django_filters.rest_framework.FilterSet):
     """
     用户管理 简单序过滤器
     """

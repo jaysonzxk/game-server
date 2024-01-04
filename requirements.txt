@@ -31,3 +31,11 @@ drf-yasg==1.20.0
 djangorestframework-simplejwt=5.3.1
 django_restql=0.15.3
 qrcode=7.4.2
+PyYAML=6.0.1
+attrs=23.2.0
+drf-spectacular=0.27.0
+jsonschema=4.20.0
+jsonschema-specifications=2023.12.1
+referencing=0.32.0
+rpds-py=0.16.2
+drf-spectacular-sidecar=2024.1.1

@@ -13,7 +13,7 @@ UserProfile = get_user_model()
 # ================================================= #
 
 
-class UserProfileSerializer(CustomModelSerializer):
+class MemberSerializer(CustomModelSerializer):
     """
     简单用户序列化器
     """

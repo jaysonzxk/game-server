@@ -1597,3 +1597,257 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2024-01-03 20:19:31,110][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
 [2024-01-03 20:19:37,397][admin.op_drf.middleware.process_view():157] [INFO] [test342] POST:/api/app/login, 权限认证:10
 [2024-01-03 20:36:30,657][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/logout/, 权限认证:10
+[2024-01-03 21:13:36,322][django.request.log_response():222] [WARNING] Not Found: /favicon.ico
+[2024-01-03 21:13:51,666][django.request.log_response():222] [WARNING] Not Found: /swagger/redoc
+[2024-01-03 21:13:55,410][django.request.log_response():222] [WARNING] Not Found: /redoc/redoc
+[2024-01-03 21:14:10,885][django.request.log_response():222] [WARNING] Not Found: /swagger/swagger
+[2024-01-03 21:15:21,174][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 21:15:22,178][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:18:42,634][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 21:18:43,753][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:18:49,022][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 21:18:50,160][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:19:42,001][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:19:43,163][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:20:16,203][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:20:17,743][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:20:31,528][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:20:32,729][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:23:30,490][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:23:31,846][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:23:54,172][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:23:55,105][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:25:54,918][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:25:56,130][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:26:59,184][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:27:00,140][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:27:18,085][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:27:19,073][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:47:49,686][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:47:51,327][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:54:01,512][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 21:54:02,829][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:54:30,103][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:54:31,489][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:54:40,555][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:54:41,448][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:56:08,366][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:56:09,467][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:57:16,342][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 21:57:17,281][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:57:25,523][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 21:57:26,382][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:57:54,226][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:57:55,147][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:58:00,910][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:58:01,713][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:58:12,910][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:58:13,773][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:58:17,433][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:58:18,377][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 21:58:36,004][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 21:58:36,800][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:01:56,080][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:01:57,141][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:02:17,510][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:02:18,533][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:02:58,449][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:02:59,455][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:03:21,910][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:03:23,161][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:04:27,861][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:04:28,773][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:16:09,485][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:16:10,790][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:16:25,857][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:16:26,760][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:16:49,338][apps.app.utils.backends.authenticate():19] [INFO] admin 正在使用本地登录...
+[2024-01-03 22:17:00,097][apps.app.utils.backends.authenticate():19] [INFO] admin 正在使用本地登录...
+[2024-01-03 22:17:14,964][apps.app.utils.backends.authenticate():19] [INFO] admin 正在使用本地登录...
+[2024-01-03 22:18:18,813][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:18:19,686][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:18:50,016][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:18:50,916][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:18:59,897][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:19:00,808][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:19:03,912][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:19:04,922][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:20:32,822][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 22:20:33,641][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:21:17,794][apps.app.utils.backends.authenticate():19] [INFO] admin 正在使用本地登录...
+[2024-01-03 22:24:12,496][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:24:13,601][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:24:51,202][django.request.log_response():222] [WARNING] Not Found: /swagger/swagger-u
+[2024-01-03 22:24:53,726][django.request.log_response():222] [WARNING] Not Found: /swagger/swagger-ui
+[2024-01-03 22:25:03,789][django.request.log_response():222] [WARNING] Not Found: /swagger/swagger.html
+[2024-01-03 22:28:29,650][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:28:31,071][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:28:42,943][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:28:43,908][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:29:23,375][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:29:24,309][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 22:45:09,532][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 22:45:10,865][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:18:05,429][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 23:18:06,910][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:18:20,741][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 23:18:21,537][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:23:54,084][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 23:23:55,654][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:24:21,399][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 23:24:22,830][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:24:32,407][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 23:24:33,647][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:24:37,894][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 23:24:38,893][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:24:42,000][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-03 23:26:08,966][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:26:18,527][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 23:26:19,528][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:26:24,875][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 23:26:25,789][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:26:37,262][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 23:26:38,629][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:26:45,026][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 23:26:46,018][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:26:53,566][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-03 23:26:54,388][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-03 23:32:10,973][django.request.log_response():222] [WARNING] Not Found: /
+[2024-01-04 10:03:08,177][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:03:09,467][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:03:12,975][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:03:13,759][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:03:17,285][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:03:18,042][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:03:29,587][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:03:30,476][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:03:37,345][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:03:38,157][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:03:41,654][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:03:42,433][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:03:45,963][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:03:47,112][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:04:01,252][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:04:02,208][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:04:31,939][apps.app.utils.backends.authenticate():19] [INFO] admin 正在使用本地登录...
+[2024-01-04 10:05:23,791][apps.app.utils.backends.authenticate():19] [INFO] admindev 正在使用本地登录...
+[2024-01-04 10:05:32,374][admin.op_drf.middleware.process_view():157] [INFO] [admindev] POST:/admin/api-auth/login/, 权限认证:10
+[2024-01-04 10:05:32,375][apps.app.utils.backends.authenticate():19] [INFO] admindev 正在使用本地登录...
+[2024-01-04 10:05:44,610][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 406, in initial
+    neg = self.perform_content_negotiation(request)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 310, in perform_content_negotiation
+    return conneg.select_renderer(request, renderers, self.format_kwarg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/negotiation.py", line 45, in select_renderer
+    renderers = self.filter_renderers(renderers, format)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/negotiation.py", line 86, in filter_renderers
+    raise Http404
+django.http.response.Http404
+
+[2024-01-04 10:06:51,040][admin.op_drf.middleware.process_view():157] [INFO] [admindev] POST:/admin/api-auth/login/, 权限认证:10
+[2024-01-04 10:06:51,041][apps.app.utils.backends.authenticate():19] [INFO] admindev 正在使用本地登录...
+[2024-01-04 10:07:08,820][admin.op_drf.middleware.process_view():157] [INFO] [admindev] POST:/admin/api-auth/login/, 权限认证:10
+[2024-01-04 10:07:08,821][apps.app.utils.backends.authenticate():19] [INFO] admindev 正在使用本地登录...
+[2024-01-04 10:07:49,206][admin.op_drf.middleware.process_view():157] [INFO] [admindev] POST:/admin/api-auth/login/, 权限认证:10
+[2024-01-04 10:07:49,207][apps.app.utils.backends.authenticate():19] [INFO] admindev 正在使用本地登录...
+[2024-01-04 10:17:16,653][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-04 10:17:18,116][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:17:54,510][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-04 10:17:55,581][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:18:24,242][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-04 10:18:25,127][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:18:32,394][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-04 10:18:33,342][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:18:38,476][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-04 10:18:39,415][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:18:45,630][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-04 10:18:46,753][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:18:50,874][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-04 10:18:51,905][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:18:57,002][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-04 10:18:57,998][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:19:14,031][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:19:15,043][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:19:25,221][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:19:26,162][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:19:33,081][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:19:34,015][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:19:40,912][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:19:41,802][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:19:47,646][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:19:48,542][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:19:56,928][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:19:57,845][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:20:01,348][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:20:02,113][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:20:08,957][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:20:09,736][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:20:13,315][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:20:14,186][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:20:20,972][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:20:21,821][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:20:37,603][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:20:38,499][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:25:07,769][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:25:09,036][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:27:54,924][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/urls.py changed, reloading.
+[2024-01-04 10:27:56,182][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:28:01,659][drf_yasg.generators.get_path_from_regex():35] [WARNING] url pattern does not end in $ ('media/(?P<path>.*)') - unexpected things might happen
+[2024-01-04 10:28:01,851][apps.admin.utils.exceptions.op_exception_handler():78] [ERROR] Traceback (most recent call last):
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 246, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 404, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 446, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 45, in get_operation
+    responses = self.get_responses()
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 180, in get_responses
+    response_serializers = self.get_response_serializers()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 235, in get_response_serializers
+    responses = self.get_default_responses()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 211, in get_default_responses
+    default_schema = self.serializer_to_schema(default_schema) or ''
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 437, in serializer_to_schema
+    return self.probe_inspectors(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/inspectors/field.py", line 33, in get_schema
+    return self.probe_field_inspectors(serializer, openapi.Schema, self.use_definitions)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/work/game-server/venv/lib/python3.11/site-packages/drf_yasg/inspectors/field.py", line 132, in field_to_swagger_object
+    raise SwaggerGenerationError(
+drf_yasg.errors.SwaggerGenerationError: Schema for <class 'apps.admin.member.serializers.UserProfileSerializer'> would override distinct serializer <class 'apps.admin.permission.serializers.UserProfileSerializer'> because they implicitly share the same ref_name; explicitly set the ref_name attribute on both serializers' Meta classes
+
+[2024-01-04 10:32:30,499][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/member/filters.py changed, reloading.
+[2024-01-04 10:32:31,788][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 10:32:38,857][drf_yasg.generators.get_path_from_regex():35] [WARNING] url pattern does not end in $ ('media/(?P<path>.*)') - unexpected things might happen
+[2024-01-04 10:32:44,905][drf_yasg.generators.get_path_from_regex():35] [WARNING] url pattern does not end in $ ('media/(?P<path>.*)') - unexpected things might happen
+[2024-01-04 10:38:01,707][drf_yasg.generators.get_path_from_regex():35] [WARNING] url pattern does not end in $ ('media/(?P<path>.*)') - unexpected things might happen
+[2024-01-04 11:22:03,004][drf_yasg.generators.get_path_from_regex():35] [WARNING] url pattern does not end in $ ('media/(?P<path>.*)') - unexpected things might happen
