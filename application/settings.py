@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'apps.admin.order',
     'apps.admin.pay',
     'apps.admin.game',
+    'apps.admin.live'
 ]
 
 MIDDLEWARE = [

@@ -2081,3 +2081,39 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'gameCategory_id' into
 [2024-01-04 16:53:31,227][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/game/models/games.py changed, reloading.
 [2024-01-04 16:53:32,602][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
 [2024-01-04 16:53:52,815][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/games/games/add, 权限认证:10
+[2024-01-04 18:11:14,399][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/application/settings.py changed, reloading.
+[2024-01-04 18:11:15,761][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 18:24:41,591][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/live/models/__init__.py changed, reloading.
+[2024-01-04 18:24:43,098][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 18:38:50,165][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:39:00,396][admin.op_drf.middleware.process_view():157] [INFO] [admin] PUT:/admin/permission/menus/{id}/, 权限认证:20
+[2024-01-04 18:39:35,544][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:40:04,594][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:41:12,530][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/urls.py changed, reloading.
+[2024-01-04 18:41:13,965][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 18:41:30,474][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:42:00,989][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:42:33,197][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:42:59,078][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:43:20,059][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:43:47,753][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:44:09,067][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:44:34,592][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/permission/menus/, 权限认证:20
+[2024-01-04 18:53:50,634][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/live/tag/add, 权限认证:10
+[2024-01-04 18:54:25,454][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/live/tag/add, 权限认证:10
+[2024-01-04 18:54:34,485][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/live/tag/add, 权限认证:10
+[2024-01-04 18:54:42,160][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/live/tag/add, 权限认证:10
+[2024-01-04 18:54:53,352][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/live/tag/add, 权限认证:10
+[2024-01-04 18:55:02,249][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/live/tag/add, 权限认证:10
+[2024-01-04 21:41:12,955][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/live/models/live.py changed, reloading.
+[2024-01-04 21:41:14,846][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 21:41:32,210][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/live/views.py changed, reloading.
+[2024-01-04 21:41:33,353][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 21:44:36,115][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/live/views.py changed, reloading.
+[2024-01-04 21:44:37,596][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 22:01:23,866][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/upload, 权限认证:10
+[2024-01-04 22:01:35,356][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/live/lives/add, 权限认证:10
+[2024-01-04 22:01:52,694][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/live/lives/add, 权限认证:10
+[2024-01-04 22:03:56,625][django.utils.autoreload.trigger_reload():217] [INFO] /Users/mac/Desktop/work/game-server/apps/admin/live/serializers.py changed, reloading.
+[2024-01-04 22:03:58,751][django.utils.autoreload.run_with_reloader():597] [INFO] Watching for file changes with StatReloader
+[2024-01-04 22:06:24,282][admin.op_drf.middleware.process_view():157] [INFO] [admin] POST:/admin/live/lives/add, 权限认证:10

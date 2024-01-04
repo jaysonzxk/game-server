@@ -57,6 +57,7 @@ urlpatterns = [
     re_path(r'^monitor/', include('apps.admin.monitor.urls')),
     re_path(r'^pay/', include('apps.admin.pay.urls')),
     re_path(r'^games/', include('apps.admin.game.urls')),
+    re_path(r'^live/', include('apps.admin.live.urls')),
     # 用户
     re_path(r'^member/', include('apps.admin.member.urls')),
     re_path(r'^upload', ImageUploadView.as_view())
