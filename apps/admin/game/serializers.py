@@ -1,7 +1,7 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
-from apps.admin.game.models import GameCategory, Games, GameManufacturer
+from apps.admin.game.models import GameCategory, Games
 from apps.admin.op_drf.serializers import CustomModelSerializer
 
 
@@ -15,22 +15,22 @@ class GameCategorySerializer(CustomModelSerializer):
         fields = '__all__'
 
 
-class GameManufacturerSerializer(CustomModelSerializer):
-    """
-    游戏厂商序列化器
-    """
-    gameCategory = serializers.IntegerField(source='gameCategory_id')
-
-    class Meta:
-        model = GameManufacturer
-        fields = '__all__'
+# class GameManufacturerSerializer(CustomModelSerializer):
+#     """
+#     游戏厂商序列化器
+#     """
+#     gameCategory = serializers.IntegerField(source='gameCategory_id')
+#
+#     class Meta:
+#         model = GameManufacturer
+#         fields = '__all__'
 
 
 class GamesSerializer(CustomModelSerializer):
     """
     游戏序列化器
     """
-    gameManufacturer = serializers.IntegerField(source='gameManufacturer_id')
+    gameCategory = serializers.IntegerField(source='gameCategory_id')
 
     # _name = serializers.CharField(read_only=True, source='gameManufacturer_name')
 

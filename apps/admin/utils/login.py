@@ -122,7 +122,7 @@ class LoginView(ObtainJSONWebToken):
                         payload = jwt_payload_handler(user)
                         token = jwt_encode_handler(payload)
                         response_data = jwt_response_payload_handler(token, user, request)
-                        response = SuccessResponse(response_data)
+                        response = DetailResponse(response_data)
                         _dict = {'id': user.id, 'username': user.username, 'email': user.email, 'token': token}
                         session_id = jwt_get_session_id(token)
                         key = f"{self.prefix}_{session_id}_{user.username}"
