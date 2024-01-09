@@ -41,3 +41,55 @@ class IncomeRank(CoreModel):
 
     def __str__(self):
         return f"{self.user.username}"
+
+
+class GameOrder(CoreModel):
+    user = ForeignKey(to='permission.UserProfile', verbose_name='关联用户', null=True, blank=True, on_delete=CASCADE,
+                      related_name='order_game')
+    game = ForeignKey(to='game.Games', verbose_name='关联游戏', null=True, blank=True, on_delete=CASCADE,
+                      related_name='order_game')
+    orderNo = CharField(verbose_name='订单编号', null=True, blank=True, max_length=500)
+    betAmount = DecimalField(verbose_name='投注金额', null=True, blank=True, max_digits=15, decimal_places=2)
+    incomeAmount = DecimalField(verbose_name='收益金额', null=True, blank=True, max_digits=15, decimal_places=2)
+    status = IntegerField(verbose_name="状态", null=True, default=0)
+
+    class Meta:
+        verbose_name = '投注订单'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return f"{self.user.username}"
+
+
+class RewardOrder(CoreModel):
+    user = ForeignKey(to='permission.UserProfile', verbose_name='关联用户', null=True, blank=True, on_delete=CASCADE,
+                      related_name='order_reward_user')
+    live = ForeignKey(to='live.Lives', verbose_name='关联主播', null=True, blank=True, on_delete=CASCADE,
+                      related_name='order_reward_live')
+    orderNo = CharField(verbose_name='订单编号', null=True, blank=True, max_length=500)
+    rewardAmount = IntegerField(verbose_name='打赏金额', null=True, blank=True)
+    status = IntegerField(verbose_name="状态", null=True, default=0)
+
+    class Meta:
+        verbose_name = '打赏流水'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return f"{self.user.username}"
+
+
+class WalletOrder(CoreModel):
+    user = ForeignKey(to='permission.UserProfile', verbose_name='关联用户', null=True, blank=True, on_delete=CASCADE,
+                      related_name='wallet_reward_user')
+    live = ForeignKey(to='live.Lives', verbose_name='关联主播', null=True, blank=True, on_delete=CASCADE,
+                      related_name='wallet_reward_live')
+    orderNo = CharField(verbose_name='订单编号', null=True, blank=True, max_length=500)
+    rewardAmount = IntegerField(verbose_name='打赏金额', null=True, blank=True)
+    status = IntegerField(verbose_name="状态", null=True, default=0)
+
+    class Meta:
+        verbose_name = '打赏流水'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return f"{self.user.username}"
