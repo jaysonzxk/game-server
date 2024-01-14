@@ -42,5 +42,8 @@ urlpatterns = [
     re_path('user/importTemplate/',
             UserProfileModelViewSet.as_view({'get': 'importTemplate', 'post': 'importTemplate'})),
 
+    # 新增管理员
+    re_path('user/add', UserProfileModelViewSet.as_view({'post': 'add_user'})),
+
 ]
 urlpatterns += router.urls

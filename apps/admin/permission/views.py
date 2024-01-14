@@ -388,3 +388,11 @@ class UserProfileModelViewSet(CustomModelViewSet):
         if hasattr(self, 'handle_logging'):
             self.handle_logging(request, instance=instance, *args, **kwargs)
         return SuccessResponse(serializer.data)
+
+    def add_user(self, request: Request, *args, **kwargs):
+        """
+        新增管理员
+        """
+        jsonData = request.data
+        print(jsonData)
+        return SuccessResponse()
